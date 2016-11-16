@@ -4,15 +4,20 @@ This is repository for exploration of univizor data.
 
 ## Setup & development
 
-With [mkvirtualenv](https://virtualenvwrapper.readthedocs.io/en/latest/),...
+With [mkvirtualenv]:
 
 ```bash
-mkvirtualenv --no-site-packages \
-  --python=/usr/local/Cellar/python3/3.5.2_1/bin/python3 explore
+PYTHON_PATH=/usr/local/Cellar/python3/3.5.2_1/bin/python3
+mkvirtualenv --no-site-packages --python=$PYTHON_PATH explore
 workon explore
-pip3 install --upgrade pip && pip install --upgrade -r requirements.txt   
+pip3 install --upgrade pip && pip install --upgrade -r requirements.txt
+```
 
+Start [jupyter] `notebook`:
+
+```bash
 jupyter notebook
+# look inside "workbooks/" folder.
 ```
 
 ## Environment variables
@@ -34,3 +39,7 @@ export SPARK_MASTER=spark://zbook.local:7077 # Spark MASTER node
 ## Author
 
 - [Oto Brglez](https://githu.com/otobrglez)
+
+[DataDog]:https://www.datadoghq.com/
+[jupyter]:http://jupyter.org/
+[mkvirtualenv]:https://virtualenvwrapper.readthedocs.io/en/latest/
