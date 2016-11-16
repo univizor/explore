@@ -4,3 +4,6 @@ scikit-learn
 datadog
 matplotlib
 statsmodels
+ipython[all]
+py4j
+# pyspark
